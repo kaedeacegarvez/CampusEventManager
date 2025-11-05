@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <ImageView
+        android:id="@+id/back_arrow_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back_arrow_icon"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <!-- Header Date -->
+            <TextView
+                android:id="@+id/headerDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#10A37F"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Event Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Title:"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#10A37F"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Organization Name -->
+            <TextView
+                android:id="@+id/tvOrganization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Organization:"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="#555555"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textSize="15sp"
+                android:textColor="#444654"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time:"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="4dp" />
+
+            <!-- End Time -->
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Time:"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date:"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Venue -->
+            <TextView
+                android:id="@+id/tvVenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Venue:"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Capacity -->
+            <TextView
+                android:id="@+id/tvCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capacity:"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Participants -->
+            <TextView
+                android:id="@+id/tvParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Participants:"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Join/Leave Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnJoinLeave"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Join"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#10A37F"
+                app:cornerRadius="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGenerateQr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generate QR Code"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

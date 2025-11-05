@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CampusEventManager</string>
+
+    <string-array name="roles">
+        <item>Student</item>
+        <item>Organizer</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string name="event_starts">Starts: %1$s</string>
+    <string name="event_ends">Ends: %1$s</string>
+    <string name="event_venue">@ %1$s</string>
+    <string name="event_for">For: %1$s</string>
+    <string name="event_capacity">Capacity: %1$d / %2$s</string>
+    <string name="leave">Leave</string>
+    <string name="join">Join</string>
+    <string name="full">Full</string>
+    <string name="contact_admin">Contact Admin</string>
+    <string name="about_app">About App</string>
+
+</resources>
